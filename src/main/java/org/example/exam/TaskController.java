@@ -68,7 +68,7 @@ public class TaskController {
 
 
         container.start();
-        boolean messageConsumed = latch.await(10, TimeUnit.SECONDS); // Таймаут 10 сек
+        boolean messageConsumed = latch.await(10, TimeUnit.SECONDS); 
         container.stop();
 
         if (!messageConsumed) {
